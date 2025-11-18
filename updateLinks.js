@@ -16,7 +16,7 @@ async function updateDownloadLinksAndTimesByIndex() {
     for (const release of releases) {
       const name = release.name;
       for (const key of keys) {
-        if (name.startsWith(key)) {
+        if (name === key || name.startsWith(key + "-")) {
           const currentTime = latestReleases[key]?.timestamp || null;
           const match = name.match(/\d{8}-\d{4}/);
           if (!match) continue;
