@@ -29,7 +29,7 @@ async function updateDownloadLinksAndTimesByIndex() {
     }
 
     const linkElements = Array.from(
-      document.querySelectorAll(".item.grid-3 > a"),
+      document.querySelectorAll(".item.grid-6 > a"),
     );
     const timeIds = ["time-256M", "time-128M", "time-128M-ubootmod"];
 
